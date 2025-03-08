@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { RiCloseLine, RiMenu2Line } from "@remixicon/react";
 const Navbar = () => {
   const [menu, openMenu] = useState(false);
-  const [showMenu, setShowmenu] = useState(true);
+  const [showMenu, setShowmenu] = useState(false);
   return (
     <nav className="flex flex-wrap items-center justify-between w-full text-white px-10 pt-6 md:px-20">
       <span className="text-xl font-bold tracking-wide flex-shrink-0">Portfolio</span>
