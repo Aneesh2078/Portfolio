@@ -4,6 +4,10 @@ import ticTacToeImg from "../../assets/tic-tac-toe.png";
 import calculatorImg from "../../assets/calculator.png";
 import todoListImg from "../../assets/todo-list.png";
 import stopwatchImg from "../../assets/stopwatch.png";
+import ticTacToeVideo from "../../assets/TictacToe.mp4";
+import calculatorVideo from "../../assets/Calculator.mp4";
+import todoListVideo from "../../assets/Todo List.mp4";
+import stopwatchVideo from "../../assets/Stopwatch.mp4";
 
 const Projects = () => {
   return (
@@ -21,6 +25,7 @@ const Projects = () => {
             main="This is a Tic Tac Toe game implemented as a website."
             img={ticTacToeImg}
             githubLink="https://github.com/Aneesh2078/PRODIGY-_AD_4"
+            demoVideo={ticTacToeVideo}
           />
         </div>
 
@@ -30,6 +35,7 @@ const Projects = () => {
             main="This is a calculator application developed using Kotlin."
             img={calculatorImg}
             githubLink="https://github.com/Aneesh2078/PRODIGY_AD_01"
+            demoVideo={calculatorVideo}
           />
         </div>
 
@@ -39,6 +45,7 @@ const Projects = () => {
             main="This is a Todo List application developed using Java."
             img={todoListImg}
             githubLink="https://github.com/Aneesh2078/PRODIGY_AD_02"
+            demoVideo={todoListVideo}
           />
         </div>
 
@@ -48,6 +55,7 @@ const Projects = () => {
             main="This is a stopwatch application developed using both Kotlin and Java."
             img={stopwatchImg}
             githubLink="https://github.com/Aneesh2078/PRODIGY_AD_03"
+            demoVideo={stopwatchVideo}
           />
         </div>
       </div>

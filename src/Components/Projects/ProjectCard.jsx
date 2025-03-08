@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const ProjectCard = ({ title, main, img, githubLink }) => {
+const ProjectCard = ({ title, main, img, githubLink, demoVideo }) => {
   return (
     <motion.div
       className="p-3 md:p-6 flex flex-col w-80 bg-[#0c0e19] shadow-xl shadow-slate-900 rounded-2xl cursor-pointer"
@@ -21,13 +21,21 @@ const ProjectCard = ({ title, main, img, githubLink }) => {
       </h3>
       <p className="px-4 text-sm md:text-md leading-tight py-2">{main}</p>
       {/* Centering the button */}
-      <div className="flex justify-center mt-4">
+      <div className="flex justify-center gap-4 mt-4">
         <button
           className="text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]"
           onClick={() => window.open(githubLink, "_blank")}
         >
           Source Code
         </button>
+        {demoVideo && (
+          <button
+            className="text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]"
+            onClick={() => window.open(demoVideo, "_blank")}
+          >
+            Demo video
+          </button>
+        )}
       </div>
     </motion.div>
   );
